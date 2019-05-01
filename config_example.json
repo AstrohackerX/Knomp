@@ -11,11 +11,11 @@
     },
 
     "defaultPoolConfigs": {
-        "blockRefreshInterval": 0,
+        "blockRefreshInterval": 500,
         "jobRebroadcastTimeout": 55,
         "connectionTimeout": 600,
         "emitInvalidBlockHashes": false,
-        "validateWorkerUsername": false,
+        "validateWorkerUsername": true,
         "tcpProxyProtocol": false,
         "banning": {
             "enabled": false,
@@ -29,14 +29,14 @@
             "port": 6379,
             "password": ""
         }
-    },
+},
 
-    "website": {
+ "website": {
         "enabled": true,
-        "host": "0.0.0.0",
+        "host": "127.0.0.1",
         "port": 8080,
-        "stratumHost": "stratum.piratepool.io",
-        "template": "default",
+        "stratumHost": "127.0.0.1",
+        "template": "test",
         "stats": {
             "updateInterval": 30,
             "historicalRetention": 14400,
@@ -58,7 +58,7 @@
         "port": 6379
     },
 
-    "switching": {
+ "switching": {
         "switch1": {
             "enabled": false,
             "algorithm": "sha256",
@@ -75,7 +75,7 @@
                 }
             }
         },
-        "switch2": {
+ "switch2": {
             "enabled": false,
             "algorithm": "scrypt",
             "ports": {
@@ -91,7 +91,7 @@
                 }
             }
         },
-        "switch3": {
+ "switch3": {
             "enabled": false,
             "algorithm": "x11",
             "ports": {
@@ -108,8 +108,7 @@
             }
         }
     },
-
-    "profitSwitch": {
+ "profitSwitch": {
         "enabled": false,
         "updateInterval": 600,
         "depth": 0.90,
@@ -119,3 +118,4 @@
         "useBittrex": true
     }
 }
+

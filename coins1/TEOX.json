@@ -1,0 +1,8 @@
+{
+"name": "TEOX",
+"symbol": "TEOX",
+"algorithm": "equihash",
+"txfee": 0.0001,
+"peerMagic": "83fc73cb",
+"disablecb": "false"
+}

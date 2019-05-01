@@ -1,0 +1,56 @@
+{
+"enabled":true,
+"coin": "TEOX.json",
+"address": "insertadr",
+"zAddress": "",
+"tAddress": "insertadr",
+"walletInterval": 1,
+"rewardRecipients": {},
+"tlsOptions": { "enabled": false },
+"trackShares": { "disable": true },
+"paymentProcessing": {
+        "payOnStart": true,
+        "enabled": true,
+        "minConf": 10,
+        "paymentMode": "prop",
+        "_comment_paymentMode": "prop, pplnt",
+        "paymentInterval": 180,
+        "_comment_paymentInterval": "Interval in seconds to check and perform payments.",
+        "minimumPayment": 2,
+        "maxBlocksPerPayment": 8,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 20632,
+            "user": "user",
+            "password": "pass"
+        }
+      },
+
+"ports": {
+    "3030": {
+        "tls":false,
+        "diff": 0.5,
+        "varDiff": {
+            "minDiff": 0.04,
+            "maxDiff": 36,
+            "targetTime": 15,
+            "retargetTime": 60,
+            "variancePercent": 30
+        }
+    }
+},
+
+"ports": {
+    "3030": {
+        "tls":false,
+        "diff": 0.5,
+        "varDiff": {
+            "minDiff": 0.04,
+            "maxDiff": 36,
+            "targetTime": 15,
+            "retargetTime": 60,
+            "variancePercent": 30
+        }
+    }
+},
+
